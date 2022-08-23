@@ -1,18 +1,12 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import content from "./content"
 
-let beastContent = content.map (item =>
-    <HornedBeast
-      key={item._id}
-      title = {item.title}
-      img ={item.image_url}
-      description = {item.description}
-      />
-    )
+beastContent 
 
 class Main extends React.Component {
-
+    constructor(props) {
+        super(props)
+    }
     render() {
         return (
             beastContent
