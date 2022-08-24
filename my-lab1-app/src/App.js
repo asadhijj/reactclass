@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import SelectedBeast from "./components/SelectBeasts";
+import FormForHorns from "./components/FormForHorns";
 import './App.css';
 
 
@@ -15,6 +16,7 @@ class App extends React.Component {
       title: "",
       img: "",
       disc: "",
+      horns : " " 
     };
   }
 
@@ -32,13 +34,22 @@ class App extends React.Component {
       show: false,
     });
   };
+  
+  numOfHorns = (e) => {
+    this.setState({
+      horns : e.target.value
+    })
+  }
 
   render() {
     return (
       <div>
   <Header />
+
+  <FormForHorns numOfHorns={this.numOfHorns}/>
+
   <div className={"cards-container"}>
-    <Main content={content} cardModal={this.showModal} />
+    <Main content={content} cardModal={this.showModal} numOfHorns={this.state} />
   </div>
   <SelectedBeast
     beastData={this.state}
