@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.my-title {
+  text-align: center;
+}
+
+.img-card {
+  height: 200px;
+}
+
+.animal-card {
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
