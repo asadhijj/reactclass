@@ -35,6 +35,7 @@ render() {
           <p>{this.props.description}</p>
         </Card.Text>
         <Card.Text>😻 Number of Votes : {this.state.numOfVotes}</Card.Text>
+        <Card.Text>Number of Horns = {this.props.horns}</Card.Text>
         <Button
           onClick={() => {
             this.props.showModal(
