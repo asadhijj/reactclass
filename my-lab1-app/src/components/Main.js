@@ -1,7 +1,5 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import Row from "react-bootstrap/Row";
-
 class Main extends React.Component {
   render() {
     return this.props.content.map((item) => (
